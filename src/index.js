@@ -17,7 +17,7 @@ function App() {
   });
 
   async function handleToken(token, addresses) {
-    const response = await axios.post("https://ry7v05l6on.sse.codesandbox.io/checkout", {
+    const response = await axios.post("https://kxrjv.sse.codesandbox.io/checkout", {
       token,
       product
     });
@@ -37,7 +37,7 @@ function App() {
         <h3>On Sale · ${product.price}</h3>
       </div>
       <StripeCheckout
-        stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
+        stripeKey="pk_test_I8Dmr7WhjdCddnEerQt8S7aN00QhVA4BrJ"
         token={handleToken}
         amount={product.price * 100}
         name="Mercedes AMG"
